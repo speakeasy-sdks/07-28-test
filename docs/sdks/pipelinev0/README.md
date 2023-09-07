@@ -28,50 +28,33 @@ func main() {
     res, err := s.PipelineV0.Build(ctx, operations.Pipeline1GeneralV0GeneralPostRequest{
         PipelineBodyV0: &shared.PipelineBodyV0{
             Coordinates: []string{
-                "ipsam",
+                "suscipit",
             },
             Encoding: []string{
-                "sapiente",
-                "quo",
-                "odit",
-                "at",
+                "iure",
             },
             Files: [][]byte{
-                []byte("maiores"),
-                []byte("molestiae"),
-                []byte("quod"),
-                []byte("quod"),
+                []byte("magnam"),
             },
-            GzUncompressedContentType: testingtesting.String("esse"),
+            GzUncompressedContentType: testingtesting.String("debitis"),
             HiResModelName: []string{
-                "porro",
-                "dolorum",
-                "dicta",
+                "ipsa",
             },
             OcrLanguages: []string{
-                "officia",
-                "occaecati",
-                "fugit",
+                "delectus",
             },
-            OutputFormat: testingtesting.String("deleniti"),
+            OutputFormat: testingtesting.String("tempora"),
             PdfInferTableStructure: []string{
-                "optio",
-                "totam",
-                "beatae",
-                "commodi",
+                "suscipit",
             },
             Strategy: []string{
-                "modi",
-                "qui",
+                "molestiae",
             },
             XMLKeepTags: []string{
-                "cum",
-                "esse",
-                "ipsum",
-                "excepturi",
+                "minus",
             },
         },
-        UnstructuredAPIKey: testingtesting.String("aspernatur"),
+        UnstructuredAPIKey: testingtesting.String("placeat"),
     })
     if err != nil {
         log.Fatal(err)

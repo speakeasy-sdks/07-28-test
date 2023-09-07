@@ -57,7 +57,6 @@ func (c *sdkConfiguration) GetServerDetails() (string, map[string]string) {
 	return ServerList[c.ServerIndex], nil
 }
 
-// TestingTesting
 type TestingTesting struct {
 	PipelineV0    *pipelineV0
 	PipelineV0031 *pipelineV0031
@@ -109,8 +108,8 @@ func New(opts ...SDKOption) *TestingTesting {
 		sdkConfiguration: sdkConfiguration{
 			Language:          "go",
 			OpenAPIDocVersion: "1.0.0",
-			SDKVersion:        "1.1.0",
-			GenVersion:        "2.89.1",
+			SDKVersion:        "1.2.0",
+			GenVersion:        "2.101.0",
 		},
 	}
 	for _, opt := range opts {

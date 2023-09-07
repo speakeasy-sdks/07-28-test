@@ -30,43 +30,30 @@ func main() {
     res, err := s.PipelineV0.Build(ctx, operations.Pipeline1GeneralV0GeneralPostRequest{
         PipelineBodyV0: &shared.PipelineBodyV0{
             Coordinates: []string{
-                "provident",
-                "distinctio",
-                "quibusdam",
+                "corrupti",
             },
             Encoding: []string{
-                "nulla",
-                "corrupti",
-                "illum",
+                "provident",
             },
             Files: [][]byte{
-                []byte("error"),
-                []byte("deserunt"),
+                []byte("distinctio"),
             },
-            GzUncompressedContentType: testingtesting.String("suscipit"),
+            GzUncompressedContentType: testingtesting.String("quibusdam"),
             HiResModelName: []string{
-                "magnam",
-                "debitis",
+                "unde",
             },
             OcrLanguages: []string{
-                "delectus",
+                "nulla",
             },
-            OutputFormat: testingtesting.String("tempora"),
+            OutputFormat: testingtesting.String("corrupti"),
             PdfInferTableStructure: []string{
-                "molestiae",
-                "minus",
+                "illum",
             },
             Strategy: []string{
-                "voluptatum",
-                "iusto",
-                "excepturi",
-                "nisi",
+                "vel",
             },
             XMLKeepTags: []string{
-                "temporibus",
-                "ab",
-                "quis",
-                "veritatis",
+                "error",
             },
         },
         UnstructuredAPIKey: testingtesting.String("deserunt"),
