@@ -2,7 +2,6 @@
 
 package shared
 
-// HTTPValidationError - Validation Error
 type HTTPValidationError struct {
 	Detail []ValidationError `json:"detail,omitempty"`
 }
