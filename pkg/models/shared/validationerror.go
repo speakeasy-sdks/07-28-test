@@ -2,15 +2,83 @@
 
 package shared
 
-type ValidationError struct {
-	Loc  []interface{} `json:"loc"`
-	Msg  string        `json:"msg"`
-	Type string        `json:"type"`
+import (
+	"errors"
+	"github.com/speakeasy-sdks/07-28-test/pkg/utils"
+)
+
+type ValidationErrorLocType string
+
+const (
+	ValidationErrorLocTypeStr     ValidationErrorLocType = "str"
+	ValidationErrorLocTypeInteger ValidationErrorLocType = "integer"
+)
+
+type ValidationErrorLoc struct {
+	Str     *string
+	Integer *int64
+
+	Type ValidationErrorLocType
 }
 
-func (o *ValidationError) GetLoc() []interface{} {
+func CreateValidationErrorLocStr(str string) ValidationErrorLoc {
+	typ := ValidationErrorLocTypeStr
+
+	return ValidationErrorLoc{
+		Str:  &str,
+		Type: typ,
+	}
+}
+
+func CreateValidationErrorLocInteger(integer int64) ValidationErrorLoc {
+	typ := ValidationErrorLocTypeInteger
+
+	return ValidationErrorLoc{
+		Integer: &integer,
+		Type:    typ,
+	}
+}
+
+func (u *ValidationErrorLoc) UnmarshalJSON(data []byte) error {
+
+	str := new(string)
+	if err := utils.UnmarshalJSON(data, &str, "", true, true); err == nil {
+		u.Str = str
+		u.Type = ValidationErrorLocTypeStr
+		return nil
+	}
+
+	integer := new(int64)
+	if err := utils.UnmarshalJSON(data, &integer, "", true, true); err == nil {
+		u.Integer = integer
+		u.Type = ValidationErrorLocTypeInteger
+		return nil
+	}
+
+	return errors.New("could not unmarshal into supported union types")
+}
+
+func (u ValidationErrorLoc) MarshalJSON() ([]byte, error) {
+	if u.Str != nil {
+		return utils.MarshalJSON(u.Str, "", true)
+	}
+
+	if u.Integer != nil {
+		return utils.MarshalJSON(u.Integer, "", true)
+	}
+
+	return nil, errors.New("could not marshal union type: all fields are null")
+}
+
+type ValidationError struct {
+	Loc  []ValidationErrorLoc `json:"loc"`
+	Msg  string               `json:"msg"`
+	Type string               `json:"type"`
+}
+
+func (o *ValidationError) GetLoc() []ValidationErrorLoc {
 	if o == nil {
-		return []interface{}{}
+		return []ValidationErrorLoc{}
 	}
 	return o.Loc
 }

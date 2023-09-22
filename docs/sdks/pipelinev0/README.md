@@ -16,45 +16,45 @@ package main
 import(
 	"context"
 	"log"
-	"github.com/speakeasy-sdks/07-28-test"
+	seven28test "github.com/speakeasy-sdks/07-28-test"
 	"github.com/speakeasy-sdks/07-28-test/pkg/models/operations"
 	"github.com/speakeasy-sdks/07-28-test/pkg/models/shared"
 )
 
 func main() {
-    s := testingtesting.New()
+    s := seven28test.New()
 
     ctx := context.Background()
     res, err := s.PipelineV0.Build(ctx, operations.Pipeline1GeneralV0GeneralPostRequest{
         PipelineBodyV0: &shared.PipelineBodyV0{
             Coordinates: []string{
-                "suscipit",
+                "voluptatum",
             },
             Encoding: []string{
-                "iure",
+                "iusto",
             },
             Files: [][]byte{
-                []byte("magnam"),
+                []byte("excepturi"),
             },
-            GzUncompressedContentType: testingtesting.String("debitis"),
+            GzUncompressedContentType: seven28test.String("nisi"),
             HiResModelName: []string{
-                "ipsa",
+                "recusandae",
             },
             OcrLanguages: []string{
-                "delectus",
+                "temporibus",
             },
-            OutputFormat: testingtesting.String("tempora"),
+            OutputFormat: seven28test.String("ab"),
             PdfInferTableStructure: []string{
-                "suscipit",
+                "quis",
             },
             Strategy: []string{
-                "molestiae",
+                "veritatis",
             },
             XMLKeepTags: []string{
-                "minus",
+                "deserunt",
             },
         },
-        UnstructuredAPIKey: testingtesting.String("placeat"),
+        UnstructuredAPIKey: seven28test.String("perferendis"),
     })
     if err != nil {
         log.Fatal(err)

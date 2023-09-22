@@ -7,13 +7,13 @@ package main
 import(
 	"context"
 	"log"
-	"github.com/speakeasy-sdks/07-28-test"
+	seven28test "github.com/speakeasy-sdks/07-28-test"
 	"github.com/speakeasy-sdks/07-28-test/pkg/models/operations"
 	"github.com/speakeasy-sdks/07-28-test/pkg/models/shared"
 )
 
 func main() {
-    s := testingtesting.New()
+    s := seven28test.New()
 
     ctx := context.Background()
     res, err := s.PipelineV0.Build(ctx, operations.Pipeline1GeneralV0GeneralPostRequest{
@@ -27,14 +27,14 @@ func main() {
             Files: [][]byte{
                 []byte("distinctio"),
             },
-            GzUncompressedContentType: testingtesting.String("quibusdam"),
+            GzUncompressedContentType: seven28test.String("quibusdam"),
             HiResModelName: []string{
                 "unde",
             },
             OcrLanguages: []string{
                 "nulla",
             },
-            OutputFormat: testingtesting.String("corrupti"),
+            OutputFormat: seven28test.String("corrupti"),
             PdfInferTableStructure: []string{
                 "illum",
             },
@@ -45,7 +45,7 @@ func main() {
                 "error",
             },
         },
-        UnstructuredAPIKey: testingtesting.String("deserunt"),
+        UnstructuredAPIKey: seven28test.String("deserunt"),
     })
     if err != nil {
         log.Fatal(err)
