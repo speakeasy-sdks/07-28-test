@@ -1,4 +1,5 @@
 # PipelineV0031
+(*PipelineV0031*)
 
 ### Available Operations
 
@@ -28,33 +29,30 @@ func main() {
     res, err := s.PipelineV0031.Build(ctx, operations.Pipeline1GeneralV0031GeneralPostRequest{
         PipelineBodyV0031: &shared.PipelineBodyV0031{
             Coordinates: []string{
-                "ipsam",
+                "Practical",
             },
             Encoding: []string{
-                "repellendus",
+                "Gasoline",
             },
             Files: [][]byte{
-                []byte("sapiente"),
+                []byte("[eAhpDJhn'"),
             },
-            GzUncompressedContentType: seven28test.String("quo"),
             HiResModelName: []string{
-                "odit",
+                "henry",
             },
             OcrLanguages: []string{
-                "at",
+                "Meitnerium",
             },
-            OutputFormat: seven28test.String("at"),
             PdfInferTableStructure: []string{
-                "maiores",
+                "Convertible",
             },
             Strategy: []string{
-                "molestiae",
+                "Direct",
             },
             XMLKeepTags: []string{
-                "quod",
+                "gee",
             },
         },
-        UnstructuredAPIKey: seven28test.String("quod"),
     })
     if err != nil {
         log.Fatal(err)

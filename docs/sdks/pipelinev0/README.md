@@ -1,4 +1,5 @@
 # PipelineV0
+(*PipelineV0*)
 
 ### Available Operations
 
@@ -28,33 +29,30 @@ func main() {
     res, err := s.PipelineV0.Build(ctx, operations.Pipeline1GeneralV0GeneralPostRequest{
         PipelineBodyV0: &shared.PipelineBodyV0{
             Coordinates: []string{
-                "voluptatum",
+                "Practical",
             },
             Encoding: []string{
-                "iusto",
+                "Gasoline",
             },
             Files: [][]byte{
-                []byte("excepturi"),
+                []byte("[eAhpDJhn'"),
             },
-            GzUncompressedContentType: seven28test.String("nisi"),
             HiResModelName: []string{
-                "recusandae",
+                "henry",
             },
             OcrLanguages: []string{
-                "temporibus",
+                "Meitnerium",
             },
-            OutputFormat: seven28test.String("ab"),
             PdfInferTableStructure: []string{
-                "quis",
+                "Convertible",
             },
             Strategy: []string{
-                "veritatis",
+                "Direct",
             },
             XMLKeepTags: []string{
-                "deserunt",
+                "gee",
             },
         },
-        UnstructuredAPIKey: seven28test.String("perferendis"),
     })
     if err != nil {
         log.Fatal(err)

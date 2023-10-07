@@ -19,33 +19,30 @@ func main() {
     res, err := s.PipelineV0.Build(ctx, operations.Pipeline1GeneralV0GeneralPostRequest{
         PipelineBodyV0: &shared.PipelineBodyV0{
             Coordinates: []string{
-                "corrupti",
+                "Practical",
             },
             Encoding: []string{
-                "provident",
+                "Gasoline",
             },
             Files: [][]byte{
-                []byte("distinctio"),
+                []byte("[eAhpDJhn'"),
             },
-            GzUncompressedContentType: seven28test.String("quibusdam"),
             HiResModelName: []string{
-                "unde",
+                "henry",
             },
             OcrLanguages: []string{
-                "nulla",
+                "Meitnerium",
             },
-            OutputFormat: seven28test.String("corrupti"),
             PdfInferTableStructure: []string{
-                "illum",
+                "Convertible",
             },
             Strategy: []string{
-                "vel",
+                "Direct",
             },
             XMLKeepTags: []string{
-                "error",
+                "gee",
             },
         },
-        UnstructuredAPIKey: seven28test.String("deserunt"),
     })
     if err != nil {
         log.Fatal(err)

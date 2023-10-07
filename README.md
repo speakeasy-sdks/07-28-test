@@ -28,33 +28,30 @@ func main() {
     res, err := s.PipelineV0.Build(ctx, operations.Pipeline1GeneralV0GeneralPostRequest{
         PipelineBodyV0: &shared.PipelineBodyV0{
             Coordinates: []string{
-                "suscipit",
+                "Practical",
             },
             Encoding: []string{
-                "iure",
+                "Gasoline",
             },
             Files: [][]byte{
-                []byte("magnam"),
+                []byte("[eAhpDJhn'"),
             },
-            GzUncompressedContentType: seven28test.String("debitis"),
             HiResModelName: []string{
-                "ipsa",
+                "henry",
             },
             OcrLanguages: []string{
-                "delectus",
+                "Meitnerium",
             },
-            OutputFormat: seven28test.String("tempora"),
             PdfInferTableStructure: []string{
-                "suscipit",
+                "Convertible",
             },
             Strategy: []string{
-                "molestiae",
+                "Direct",
             },
             XMLKeepTags: []string{
-                "minus",
+                "gee",
             },
         },
-        UnstructuredAPIKey: seven28test.String("placeat"),
     })
     if err != nil {
         log.Fatal(err)
@@ -84,8 +81,6 @@ func main() {
 
 <!-- Start Dev Containers -->
 
-
-
 <!-- End Dev Containers -->
 
 
@@ -98,8 +93,6 @@ returned response object will have a `Next` method that can be called to pull do
 return value of `Next` is `nil`, then there are no more pages to be fetched.
 
 Here's an example of one such pagination call:
-
-
 <!-- End Pagination -->
 
 

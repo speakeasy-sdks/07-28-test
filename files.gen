@@ -19,6 +19,7 @@ pkg/utils/requestbody.go
 pkg/utils/retries.go
 pkg/utils/security.go
 pkg/utils/utils.go
+tests/helpers.go
 pkg/models/operations/pipeline1generalv0generalpost.go
 pkg/models/operations/pipeline1generalv0031generalpost.go
 pkg/models/shared/httpvalidationerror.go
