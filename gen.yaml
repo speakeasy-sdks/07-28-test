@@ -2,8 +2,8 @@ configVersion: 1.0.0
 management:
   docChecksum: 3afc36b6479b9533f60bf66bba8956bb
   docVersion: 1.0.0
-  speakeasyVersion: 1.96.1
-  generationVersion: 2.150.0
+  speakeasyVersion: 1.101.0
+  generationVersion: 2.161.0
 generation:
   comments:
     disableComments: false
@@ -14,12 +14,12 @@ generation:
   tagNamespacingDisabled: false
 features:
   go:
-    core: 2.91.4
+    core: 2.91.5
     globalServerURLs: 2.82.0
     nameOverrides: 2.81.1
     unions: 2.83.1
 go:
-  version: 1.4.0
+  version: 1.4.1
   flattenGlobalSecurity: true
   maxMethodParams: 0
   packageName: github.com/speakeasy-sdks/07-28-test
