@@ -29,28 +29,31 @@ func main() {
     res, err := s.PipelineV0031.Build(ctx, operations.Pipeline1GeneralV0031GeneralPostRequest{
         PipelineBodyV0031: &shared.PipelineBodyV0031{
             Coordinates: []string{
-                "Practical",
+                "string",
             },
             Encoding: []string{
-                "Gasoline",
+                "string",
             },
-            Files: [][]byte{
-                []byte("[eAhpDJhn'"),
+            Files: []shared.PipelineBodyV0031Files{
+                shared.PipelineBodyV0031Files{
+                    Content: []byte("9G&x$kc[eA"),
+                    Files: "string",
+                },
             },
             HiResModelName: []string{
-                "henry",
+                "string",
             },
             OcrLanguages: []string{
-                "Meitnerium",
+                "string",
             },
             PdfInferTableStructure: []string{
-                "Convertible",
+                "string",
             },
             Strategy: []string{
-                "Direct",
+                "string",
             },
             XMLKeepTags: []string{
-                "gee",
+                "string",
             },
         },
     })

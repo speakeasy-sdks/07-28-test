@@ -19,28 +19,31 @@ func main() {
 	res, err := s.PipelineV0.Build(ctx, operations.Pipeline1GeneralV0GeneralPostRequest{
 		PipelineBodyV0: &shared.PipelineBodyV0{
 			Coordinates: []string{
-				"Practical",
+				"string",
 			},
 			Encoding: []string{
-				"Gasoline",
+				"string",
 			},
-			Files: [][]byte{
-				[]byte("[eAhpDJhn'"),
+			Files: []shared.PipelineBodyV0Files{
+				shared.PipelineBodyV0Files{
+					Content: []byte("9G&x$kc[eA"),
+					Files:   "string",
+				},
 			},
 			HiResModelName: []string{
-				"henry",
+				"string",
 			},
 			OcrLanguages: []string{
-				"Meitnerium",
+				"string",
 			},
 			PdfInferTableStructure: []string{
-				"Convertible",
+				"string",
 			},
 			Strategy: []string{
-				"Direct",
+				"string",
 			},
 			XMLKeepTags: []string{
-				"gee",
+				"string",
 			},
 		},
 	})

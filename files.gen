@@ -34,7 +34,9 @@ docs/models/operations/pipeline1generalv0031generalpostresponse.md
 docs/models/shared/httpvalidationerror.md
 docs/models/shared/validationerrorloc.md
 docs/models/shared/validationerror.md
+docs/models/shared/pipelinebodyv0files.md
 docs/models/shared/pipelinebodyv0.md
+docs/models/shared/pipelinebodyv0031files.md
 docs/models/shared/pipelinebodyv0031.md
 docs/sdks/testingtesting/README.md
 docs/sdks/pipelinev0/README.md
