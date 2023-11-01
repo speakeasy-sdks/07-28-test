@@ -41,16 +41,16 @@ func CreateValidationErrorLocInteger(integer int64) ValidationErrorLoc {
 
 func (u *ValidationErrorLoc) UnmarshalJSON(data []byte) error {
 
-	str := new(string)
+	str := ""
 	if err := utils.UnmarshalJSON(data, &str, "", true, true); err == nil {
-		u.Str = str
+		u.Str = &str
 		u.Type = ValidationErrorLocTypeStr
 		return nil
 	}
 
-	integer := new(int64)
+	integer := int64(0)
 	if err := utils.UnmarshalJSON(data, &integer, "", true, true); err == nil {
-		u.Integer = integer
+		u.Integer = &integer
 		u.Type = ValidationErrorLocTypeInteger
 		return nil
 	}
