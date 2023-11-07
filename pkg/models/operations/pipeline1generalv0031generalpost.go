@@ -3,7 +3,7 @@
 package operations
 
 import (
-	"github.com/speakeasy-sdks/07-28-test/pkg/models/shared"
+	"github.com/speakeasy-sdks/07-28-test/v2/pkg/models/shared"
 	"net/http"
 )
 
@@ -29,8 +29,6 @@ func (o *Pipeline1GeneralV0031GeneralPostRequest) GetUnstructuredAPIKey() *strin
 type Pipeline1GeneralV0031GeneralPostResponse struct {
 	// HTTP response content type for this operation
 	ContentType string
-	// Validation Error
-	HTTPValidationError *shared.HTTPValidationError
 	// HTTP response status code for this operation
 	StatusCode int
 	// Raw HTTP response; suitable for custom response parsing
@@ -42,13 +40,6 @@ func (o *Pipeline1GeneralV0031GeneralPostResponse) GetContentType() string {
 		return ""
 	}
 	return o.ContentType
-}
-
-func (o *Pipeline1GeneralV0031GeneralPostResponse) GetHTTPValidationError() *shared.HTTPValidationError {
-	if o == nil {
-		return nil
-	}
-	return o.HTTPValidationError
 }
 
 func (o *Pipeline1GeneralV0031GeneralPostResponse) GetStatusCode() int {

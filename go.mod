@@ -1,4 +1,4 @@
-module github.com/speakeasy-sdks/07-28-test
+module github.com/speakeasy-sdks/07-28-test/v2
 
 go 1.14
 

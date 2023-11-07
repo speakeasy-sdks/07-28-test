@@ -1,5 +1,5 @@
 # PipelineV0031
-(*PipelineV0031*)
+(*.PipelineV0031*)
 
 ### Available Operations
 
@@ -17,9 +17,9 @@ package main
 import(
 	"context"
 	"log"
-	seven28test "github.com/speakeasy-sdks/07-28-test"
-	"github.com/speakeasy-sdks/07-28-test/pkg/models/operations"
-	"github.com/speakeasy-sdks/07-28-test/pkg/models/shared"
+	seven28test "github.com/speakeasy-sdks/07-28-test/v2"
+	"github.com/speakeasy-sdks/07-28-test/v2/pkg/models/operations"
+	"github.com/speakeasy-sdks/07-28-test/v2/pkg/models/shared"
 )
 
 func main() {
@@ -36,8 +36,8 @@ func main() {
             },
             Files: []shared.PipelineBodyV0031Files{
                 shared.PipelineBodyV0031Files{
-                    Content: []byte("9G&x$kc[eA"),
-                    Files: "string",
+                    Content: []byte("0x591E0BfdA7"),
+                    FileName: "cab_touring_henry.mpg4",
                 },
             },
             HiResModelName: []string{

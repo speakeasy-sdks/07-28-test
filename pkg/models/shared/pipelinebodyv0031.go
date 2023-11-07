@@ -3,8 +3,8 @@
 package shared
 
 type PipelineBodyV0031Files struct {
-	Content []byte `multipartForm:"content"`
-	Files   string `multipartForm:"name=files"`
+	Content  []byte `multipartForm:"content"`
+	FileName string `multipartForm:"name=files"`
 }
 
 func (o *PipelineBodyV0031Files) GetContent() []byte {
@@ -14,11 +14,11 @@ func (o *PipelineBodyV0031Files) GetContent() []byte {
 	return o.Content
 }
 
-func (o *PipelineBodyV0031Files) GetFiles() string {
+func (o *PipelineBodyV0031Files) GetFileName() string {
 	if o == nil {
 		return ""
 	}
-	return o.Files
+	return o.FileName
 }
 
 type PipelineBodyV0031 struct {

@@ -15,9 +15,9 @@ package main
 
 import (
 	"context"
-	seven28test "github.com/speakeasy-sdks/07-28-test"
-	"github.com/speakeasy-sdks/07-28-test/pkg/models/operations"
-	"github.com/speakeasy-sdks/07-28-test/pkg/models/shared"
+	seven28test "github.com/speakeasy-sdks/07-28-test/v2"
+	"github.com/speakeasy-sdks/07-28-test/v2/pkg/models/operations"
+	"github.com/speakeasy-sdks/07-28-test/v2/pkg/models/shared"
 	"log"
 )
 
@@ -25,18 +25,18 @@ func main() {
 	s := seven28test.New()
 
 	ctx := context.Background()
-	res, err := s.PipelineV0.Build(ctx, operations.Pipeline1GeneralV0GeneralPostRequest{
-		PipelineBodyV0: &shared.PipelineBodyV0{
+	res, err := s.PipelineV0031.Build(ctx, operations.Pipeline1GeneralV0031GeneralPostRequest{
+		PipelineBodyV0031: &shared.PipelineBodyV0031{
 			Coordinates: []string{
 				"string",
 			},
 			Encoding: []string{
 				"string",
 			},
-			Files: []shared.PipelineBodyV0Files{
-				shared.PipelineBodyV0Files{
-					Content: []byte("9G&x$kc[eA"),
-					Files:   "string",
+			Files: []shared.PipelineBodyV0031Files{
+				shared.PipelineBodyV0031Files{
+					Content:  []byte("0x591E0BfdA7"),
+					FileName: "cab_touring_henry.mpg4",
 				},
 			},
 			HiResModelName: []string{
@@ -72,13 +72,13 @@ func main() {
 ## Available Resources and Operations
 
 
-### [PipelineV0](docs/sdks/pipelinev0/README.md)
-
-* [Build](docs/sdks/pipelinev0/README.md#build) - Pipeline 1
-
-### [PipelineV0031](docs/sdks/pipelinev0031/README.md)
+### [.PipelineV0031](docs/sdks/pipelinev0031/README.md)
 
 * [Build](docs/sdks/pipelinev0031/README.md#build) - Pipeline 1
+
+### [.PipelineV0](docs/sdks/pipelinev0/README.md)
+
+* [Build](docs/sdks/pipelinev0/README.md#build) - Pipeline 1
 <!-- End SDK Available Operations -->
 
 
@@ -113,6 +113,66 @@ Here's an example of one such pagination call:
 Handling errors in your SDK should largely match your expectations.  All operations return a response object or an error, they will never return both.  When specified by the OpenAPI spec document, the SDK will return the appropriate subclass.
 
 
+## Example
+
+```go
+package main
+
+import (
+	"context"
+	seven28test "github.com/speakeasy-sdks/07-28-test/v2"
+	"github.com/speakeasy-sdks/07-28-test/v2/pkg/models/operations"
+	"github.com/speakeasy-sdks/07-28-test/v2/pkg/models/shared"
+	"log"
+)
+
+func main() {
+	s := seven28test.New()
+
+	ctx := context.Background()
+	res, err := s.PipelineV0031.Build(ctx, operations.Pipeline1GeneralV0031GeneralPostRequest{
+		PipelineBodyV0031: &shared.PipelineBodyV0031{
+			Coordinates: []string{
+				"string",
+			},
+			Encoding: []string{
+				"string",
+			},
+			Files: []shared.PipelineBodyV0031Files{
+				shared.PipelineBodyV0031Files{
+					Content:  []byte("0x591E0BfdA7"),
+					FileName: "cab_touring_henry.mpg4",
+				},
+			},
+			HiResModelName: []string{
+				"string",
+			},
+			OcrLanguages: []string{
+				"string",
+			},
+			PdfInferTableStructure: []string{
+				"string",
+			},
+			Strategy: []string{
+				"string",
+			},
+			XMLKeepTags: []string{
+				"string",
+			},
+		},
+	})
+	if err != nil {
+
+		var e *sdkerrors.HTTPValidationError
+		if errors.As(err, &e) {
+			// handle error
+			log.Fatal(e.Error())
+		}
+
+	}
+}
+
+```
 <!-- End Error Handling -->
 
 
@@ -130,15 +190,14 @@ You can override the default server globally using the `WithServerIndex` option 
 
 For example:
 
-
 ```go
 package main
 
 import (
 	"context"
-	seven28test "github.com/speakeasy-sdks/07-28-test"
-	"github.com/speakeasy-sdks/07-28-test/pkg/models/operations"
-	"github.com/speakeasy-sdks/07-28-test/pkg/models/shared"
+	seven28test "github.com/speakeasy-sdks/07-28-test/v2"
+	"github.com/speakeasy-sdks/07-28-test/v2/pkg/models/operations"
+	"github.com/speakeasy-sdks/07-28-test/v2/pkg/models/shared"
 	"log"
 )
 
@@ -148,18 +207,18 @@ func main() {
 	)
 
 	ctx := context.Background()
-	res, err := s.PipelineV0.Build(ctx, operations.Pipeline1GeneralV0GeneralPostRequest{
-		PipelineBodyV0: &shared.PipelineBodyV0{
+	res, err := s.PipelineV0031.Build(ctx, operations.Pipeline1GeneralV0031GeneralPostRequest{
+		PipelineBodyV0031: &shared.PipelineBodyV0031{
 			Coordinates: []string{
 				"string",
 			},
 			Encoding: []string{
 				"string",
 			},
-			Files: []shared.PipelineBodyV0Files{
-				shared.PipelineBodyV0Files{
-					Content: []byte("9G&x$kc[eA"),
-					Files:   "string",
+			Files: []shared.PipelineBodyV0031Files{
+				shared.PipelineBodyV0031Files{
+					Content:  []byte("0x591E0BfdA7"),
+					FileName: "cab_touring_henry.mpg4",
 				},
 			},
 			HiResModelName: []string{
@@ -195,15 +254,14 @@ func main() {
 
 The default server can also be overridden globally using the `WithServerURL` option when initializing the SDK client instance. For example:
 
-
 ```go
 package main
 
 import (
 	"context"
-	seven28test "github.com/speakeasy-sdks/07-28-test"
-	"github.com/speakeasy-sdks/07-28-test/pkg/models/operations"
-	"github.com/speakeasy-sdks/07-28-test/pkg/models/shared"
+	seven28test "github.com/speakeasy-sdks/07-28-test/v2"
+	"github.com/speakeasy-sdks/07-28-test/v2/pkg/models/operations"
+	"github.com/speakeasy-sdks/07-28-test/v2/pkg/models/shared"
 	"log"
 )
 
@@ -213,18 +271,18 @@ func main() {
 	)
 
 	ctx := context.Background()
-	res, err := s.PipelineV0.Build(ctx, operations.Pipeline1GeneralV0GeneralPostRequest{
-		PipelineBodyV0: &shared.PipelineBodyV0{
+	res, err := s.PipelineV0031.Build(ctx, operations.Pipeline1GeneralV0031GeneralPostRequest{
+		PipelineBodyV0031: &shared.PipelineBodyV0031{
 			Coordinates: []string{
 				"string",
 			},
 			Encoding: []string{
 				"string",
 			},
-			Files: []shared.PipelineBodyV0Files{
-				shared.PipelineBodyV0Files{
-					Content: []byte("9G&x$kc[eA"),
-					Files:   "string",
+			Files: []shared.PipelineBodyV0031Files{
+				shared.PipelineBodyV0031Files{
+					Content:  []byte("0x591E0BfdA7"),
+					FileName: "cab_touring_henry.mpg4",
 				},
 			},
 			HiResModelName: []string{

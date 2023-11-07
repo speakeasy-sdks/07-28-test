@@ -6,27 +6,26 @@ import (
 	"bytes"
 	"context"
 	"fmt"
-	"github.com/speakeasy-sdks/07-28-test/pkg/models/operations"
-	"github.com/speakeasy-sdks/07-28-test/pkg/models/sdkerrors"
-	"github.com/speakeasy-sdks/07-28-test/pkg/models/shared"
-	"github.com/speakeasy-sdks/07-28-test/pkg/utils"
+	"github.com/speakeasy-sdks/07-28-test/v2/pkg/models/operations"
+	"github.com/speakeasy-sdks/07-28-test/v2/pkg/models/sdkerrors"
+	"github.com/speakeasy-sdks/07-28-test/v2/pkg/utils"
 	"io"
 	"net/http"
 	"strings"
 )
 
-type pipelineV0 struct {
+type PipelineV0 struct {
 	sdkConfiguration sdkConfiguration
 }
 
-func newPipelineV0(sdkConfig sdkConfiguration) *pipelineV0 {
-	return &pipelineV0{
+func newPipelineV0(sdkConfig sdkConfiguration) *PipelineV0 {
+	return &PipelineV0{
 		sdkConfiguration: sdkConfig,
 	}
 }
 
 // Build - Pipeline 1
-func (s *pipelineV0) Build(ctx context.Context, request operations.Pipeline1GeneralV0GeneralPostRequest) (*operations.Pipeline1GeneralV0GeneralPostResponse, error) {
+func (s *PipelineV0) Build(ctx context.Context, request operations.Pipeline1GeneralV0GeneralPostRequest) (*operations.Pipeline1GeneralV0GeneralPostResponse, error) {
 	baseURL := utils.ReplaceParameters(s.sdkConfiguration.GetServerDetails())
 	url := strings.TrimSuffix(baseURL, "/") + "/general/v0/general"
 
@@ -75,15 +74,18 @@ func (s *pipelineV0) Build(ctx context.Context, request operations.Pipeline1Gene
 	case httpRes.StatusCode == 422:
 		switch {
 		case utils.MatchContentType(contentType, `application/json`):
-			var out shared.HTTPValidationError
+			var out sdkerrors.HTTPValidationError
 			if err := utils.UnmarshalJsonFromResponseBody(bytes.NewBuffer(rawBody), &out, ""); err != nil {
 				return nil, err
 			}
-
-			res.HTTPValidationError = &out
+			return nil, &out
 		default:
 			return nil, sdkerrors.NewSDKError(fmt.Sprintf("unknown content-type received: %s", contentType), httpRes.StatusCode, string(rawBody), httpRes)
 		}
+	case httpRes.StatusCode >= 400 && httpRes.StatusCode < 500:
+		fallthrough
+	case httpRes.StatusCode >= 500 && httpRes.StatusCode < 600:
+		return nil, sdkerrors.NewSDKError("API error occurred", httpRes.StatusCode, string(rawBody), httpRes)
 	}
 
 	return res, nil
