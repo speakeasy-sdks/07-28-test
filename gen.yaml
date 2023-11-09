@@ -2,20 +2,20 @@ configVersion: 1.0.0
 management:
   docChecksum: 3afc36b6479b9533f60bf66bba8956bb
   docVersion: 1.0.0
-  speakeasyVersion: 1.114.1
-  generationVersion: 2.181.1
+  speakeasyVersion: 1.116.0
+  generationVersion: 2.185.0
 generation:
   comments: {}
   sdkClassName: testing-testing
   repoURL: https://github.com/speakeasy-sdks/07-28-test.git
 features:
   go:
-    core: 3.1.0
+    core: 3.1.2
     globalServerURLs: 2.82.0
     nameOverrides: 2.81.1
     unions: 2.85.0
 go:
-  version: 2.0.0
+  version: 2.0.1
   clientServerStatusCodesAsErrors: true
   flattenGlobalSecurity: true
   imports:
@@ -26,8 +26,10 @@ go:
       operations: pkg/models/operations
       shared: pkg/models/shared
       webhooks: pkg/models/webhooks
+  inputModelSuffix: input
   installationURL: https://github.com/speakeasy-sdks/07-28-test
   maxMethodParams: 0
+  outputModelSuffix: output
   packageName: github.com/speakeasy-sdks/07-28-test
   published: true
   repoSubDirectory: .
