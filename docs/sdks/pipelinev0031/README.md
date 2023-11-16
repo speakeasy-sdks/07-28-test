@@ -15,11 +15,12 @@ Pipeline 1
 package main
 
 import(
-	"context"
-	"log"
 	seven28test "github.com/speakeasy-sdks/07-28-test/v2"
-	"github.com/speakeasy-sdks/07-28-test/v2/pkg/models/operations"
+	"context"
 	"github.com/speakeasy-sdks/07-28-test/v2/pkg/models/shared"
+	"github.com/speakeasy-sdks/07-28-test/v2/pkg/models/operations"
+	"log"
+	"net/http"
 )
 
 func main() {
