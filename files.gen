@@ -23,7 +23,7 @@ pkg/utils/utils.go
 /pkg/models/operations/pipeline1generalv0031generalpost.go
 /pkg/models/operations/pipeline1generalv0generalpost.go
 /pkg/models/sdkerrors/httpvalidationerror.go
-/pkg/models/sdkerrors/validationerror.go
+/pkg/models/shared/validationerror.go
 /pkg/models/shared/pipelinebodyv0031.go
 /pkg/models/shared/pipelinebodyv0.go
 USAGE.md
@@ -32,8 +32,8 @@ docs/pkg/models/operations/pipeline1generalv0031generalpostresponse.md
 docs/pkg/models/operations/pipeline1generalv0generalpostrequest.md
 docs/pkg/models/operations/pipeline1generalv0generalpostresponse.md
 docs/pkg/models/sdkerrors/httpvalidationerror.md
-docs/pkg/models/sdkerrors/loc.md
-docs/pkg/models/sdkerrors/validationerror.md
+docs/pkg/models/shared/loc.md
+docs/pkg/models/shared/validationerror.md
 docs/pkg/models/shared/pipelinebodyv0031files.md
 docs/pkg/models/shared/pipelinebodyv0031.md
 docs/pkg/models/shared/files.md

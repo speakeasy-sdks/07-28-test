@@ -4,10 +4,12 @@ package sdkerrors
 
 import (
 	"encoding/json"
+	"github.com/speakeasy-sdks/07-28-test/v2/pkg/models/shared"
 )
 
+// HTTPValidationError - Validation Error
 type HTTPValidationError struct {
-	Detail []ValidationError `json:"detail,omitempty"`
+	Detail []shared.ValidationError `json:"detail,omitempty"`
 }
 
 var _ error = &HTTPValidationError{}
