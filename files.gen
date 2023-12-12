@@ -26,7 +26,6 @@ pkg/utils/utils.go
 /pkg/models/shared/validationerror.go
 /pkg/models/shared/pipelinebodyv0031.go
 /pkg/models/shared/pipelinebodyv0.go
-USAGE.md
 docs/pkg/models/operations/pipeline1generalv0031generalpostrequest.md
 docs/pkg/models/operations/pipeline1generalv0031generalpostresponse.md
 docs/pkg/models/operations/pipeline1generalv0generalpostrequest.md
@@ -41,4 +40,5 @@ docs/pkg/models/shared/pipelinebodyv0.md
 docs/sdks/testingtesting/README.md
 docs/sdks/pipelinev0031/README.md
 docs/sdks/pipelinev0/README.md
+USAGE.md
 .gitattributes
