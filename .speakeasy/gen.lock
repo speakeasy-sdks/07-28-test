@@ -1,0 +1,64 @@
+lockVersion: 2.0.0
+id: 39e1a215-8a42-423b-8ad4-c4cfe355c590
+management:
+  docChecksum: 3afc36b6479b9533f60bf66bba8956bb
+  docVersion: 1.0.0
+  speakeasyVersion: internal
+  generationVersion: 2.225.2
+  releaseVersion: 2.1.1
+  configChecksum: f5d88e7cc16f4be971fa68c9512277a3
+  repoURL: https://github.com/speakeasy-sdks/07-28-test.git
+  repoSubDirectory: .
+  installationURL: https://github.com/speakeasy-sdks/07-28-test
+  published: true
+features:
+  go:
+    core: 3.3.0
+    globalServerURLs: 2.82.1
+    nameOverrides: 2.81.1
+    unions: 2.85.2
+generatedFiles:
+  - pipelinev0031.go
+  - pipelinev0.go
+  - testingtesting.go
+  - go.mod
+  - go.sum
+  - tests/helpers.go
+  - pkg/models/sdkerrors/sdkerror.go
+  - pkg/types/bigint.go
+  - pkg/types/date.go
+  - pkg/types/datetime.go
+  - pkg/types/decimal.go
+  - pkg/types/pointers.go
+  - pkg/utils/contenttype.go
+  - pkg/utils/form.go
+  - pkg/utils/headers.go
+  - pkg/utils/json.go
+  - pkg/utils/pathparams.go
+  - pkg/utils/queryparams.go
+  - pkg/utils/requestbody.go
+  - pkg/utils/retries.go
+  - pkg/utils/security.go
+  - pkg/utils/utils.go
+  - /pkg/models/operations/pipeline1generalv0031generalpost.go
+  - /pkg/models/operations/pipeline1generalv0generalpost.go
+  - /pkg/models/sdkerrors/httpvalidationerror.go
+  - /pkg/models/shared/validationerror.go
+  - /pkg/models/shared/pipelinebodyv0031.go
+  - /pkg/models/shared/pipelinebodyv0.go
+  - docs/pkg/models/operations/pipeline1generalv0031generalpostrequest.md
+  - docs/pkg/models/operations/pipeline1generalv0031generalpostresponse.md
+  - docs/pkg/models/operations/pipeline1generalv0generalpostrequest.md
+  - docs/pkg/models/operations/pipeline1generalv0generalpostresponse.md
+  - docs/pkg/models/sdkerrors/httpvalidationerror.md
+  - docs/pkg/models/shared/loc.md
+  - docs/pkg/models/shared/validationerror.md
+  - docs/pkg/models/shared/pipelinebodyv0031files.md
+  - docs/pkg/models/shared/pipelinebodyv0031.md
+  - docs/pkg/models/shared/files.md
+  - docs/pkg/models/shared/pipelinebodyv0.md
+  - docs/sdks/testingtesting/README.md
+  - docs/sdks/pipelinev0031/README.md
+  - docs/sdks/pipelinev0/README.md
+  - USAGE.md
+  - .gitattributes
