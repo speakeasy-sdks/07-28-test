@@ -15,10 +15,10 @@ Pipeline 1
 package main
 
 import(
-	seven28test "github.com/speakeasy-sdks/07-28-test/v2"
+	seven28test "github.com/speakeasy-sdks/07-28-test/v3"
 	"context"
-	"github.com/speakeasy-sdks/07-28-test/v2/pkg/models/shared"
-	"github.com/speakeasy-sdks/07-28-test/v2/pkg/models/operations"
+	"github.com/speakeasy-sdks/07-28-test/v3/pkg/models/shared"
+	"github.com/speakeasy-sdks/07-28-test/v3/pkg/models/operations"
 	"log"
 	"net/http"
 )

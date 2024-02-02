@@ -4,7 +4,7 @@ package shared
 
 import (
 	"errors"
-	"github.com/speakeasy-sdks/07-28-test/v2/pkg/utils"
+	"github.com/speakeasy-sdks/07-28-test/v3/pkg/utils"
 )
 
 type LocType string

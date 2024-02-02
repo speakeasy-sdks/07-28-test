@@ -4,9 +4,9 @@ package main
 
 import (
 	"context"
-	seven28test "github.com/speakeasy-sdks/07-28-test/v2"
-	"github.com/speakeasy-sdks/07-28-test/v2/pkg/models/operations"
-	"github.com/speakeasy-sdks/07-28-test/v2/pkg/models/shared"
+	seven28test "github.com/speakeasy-sdks/07-28-test/v3"
+	"github.com/speakeasy-sdks/07-28-test/v3/pkg/models/operations"
+	"github.com/speakeasy-sdks/07-28-test/v3/pkg/models/shared"
 	"log"
 	"net/http"
 )
