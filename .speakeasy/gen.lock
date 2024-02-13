@@ -4,9 +4,9 @@ management:
   docChecksum: 3afc36b6479b9533f60bf66bba8956bb
   docVersion: 1.0.0
   speakeasyVersion: internal
-  generationVersion: 2.250.2
-  releaseVersion: 3.0.1
-  configChecksum: 0752b5432a6a6cbd7ace5c1434c6b3b9
+  generationVersion: 2.253.0
+  releaseVersion: 3.0.2
+  configChecksum: a07a6a6f03ac5c180745a8d90d6db6eb
   repoURL: https://github.com/speakeasy-sdks/07-28-test.git
   repoSubDirectory: .
   installationURL: https://github.com/speakeasy-sdks/07-28-test
@@ -16,7 +16,7 @@ features:
     core: 3.3.2
     globalServerURLs: 2.82.1
     nameOverrides: 2.81.1
-    unions: 2.85.2
+    unions: 2.85.3
 generatedFiles:
   - pipelinev0031.go
   - pipelinev0.go
