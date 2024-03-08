@@ -7,7 +7,6 @@ import (
 	seven28test "github.com/speakeasy-sdks/07-28-test/v3"
 	"github.com/speakeasy-sdks/07-28-test/v3/pkg/models/operations"
 	"log"
-	"net/http"
 )
 
 func main() {
@@ -18,8 +17,7 @@ func main() {
 	if err != nil {
 		log.Fatal(err)
 	}
-
-	if res.StatusCode == http.StatusOK {
+	if res != nil {
 		// handle response
 	}
 }
